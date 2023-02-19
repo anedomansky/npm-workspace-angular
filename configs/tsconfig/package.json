@@ -1,0 +1,11 @@
+{
+  "name": "@anedomansky/tsconfig",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "./tsconfig.base.json"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "extends": "@anedomansky/tsconfig/tsconfig.base.json",
+  "references": [
+    {
+      "path": "./packages/domain"
+    },
+    {
+      "path": "./packages/adapters"
+    },
+    {
+      "path": "./packages/loader"
+    }
+  ]
+}
