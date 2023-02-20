@@ -1,5 +1,5 @@
 export type CounterAPI = {
   getCount(): number;
   increment(count: number): number;
-  reset(): void;
+  reset(): number;
 };

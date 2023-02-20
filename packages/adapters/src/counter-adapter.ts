@@ -1,11 +1,11 @@
-import { CounterAdapterImpl } from '@anedomansky/domain';
+import { CounterAdapterSPI } from '@anedomansky/domain';
 
-export class CounterAdapter implements CounterAdapterImpl {
+export class CounterAdapter implements CounterAdapterSPI {
   increment(count: number): number {
     const newCount = count + 1;
     return newCount;
   }
-  reset(): void {
-    throw new Error('Method not implemented.');
+  reset(): number {
+    return 0;
   }
 }

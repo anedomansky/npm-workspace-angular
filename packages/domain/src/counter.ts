@@ -1,11 +1,11 @@
 import { CounterAPI } from './ports/api/counter';
-import { CounterAdapterImpl } from './ports/spi/counter-adapter';
+import { CounterAdapterSPI } from './ports/spi/counter-adapter';
 
 export class Counter implements CounterAPI {
-  private counterAdapter: CounterAdapterImpl;
+  private counterAdapter: CounterAdapterSPI;
   private count: number;
 
-  constructor(counterAdapter: CounterAdapterImpl) {
+  constructor(counterAdapter: CounterAdapterSPI) {
     this.counterAdapter = counterAdapter;
     this.count = 0;
   }
@@ -18,7 +18,7 @@ export class Counter implements CounterAPI {
     this.count = this.counterAdapter.increment(count);
     return this.count;
   }
-  reset(): void {
-    this.counterAdapter.reset();
+  reset(): number {
+    return this.counterAdapter.reset();
   }
 }

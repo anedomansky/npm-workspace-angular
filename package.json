@@ -1,7 +1,7 @@
 {
   "name": "npm-workspace-angular",
   "workspaces": [
-    "ngx-libraries/projects/*",
+    "ngx-libraries/projects/anedomansky/ngx-common-library",
     "packages/*",
     "ngx-product-module-1",
     "ngx-customer-app",
